@@ -1,6 +1,6 @@
 - name: "testing ansible playbook"
-  hosts: local
-  connection: local
+  hosts: front-end
+  #connection: local
   tasks:
     - name: "printing msg to console"
       ansible.builtin.debug:
