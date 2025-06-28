@@ -6,6 +6,6 @@
   tasks:
     - name: Displaying course information
       ansible.builtin.debug:
-        msg: "thec course is {{COURSE}} and Trainse is {{TRAINER}} and Duration is {{DURATION}}""
+        msg: "thec course is {{COURSE}} and Trainse is {{TRAINER}} and Duration is {{DURATION}}"
     
     
