@@ -1,14 +1,11 @@
 - name: "Installing nginx server"
-  hosts: front-end
+  hosts: local
+  connection: local
   become: yes
+  vars_files:
+    - course.yaml
   tasks:
-    - name: Install nginx
-      ansible.builtin.package:
-        name: nginx
-        state: present
-    - name: start nginx
-      ansible.builtin.service:
-        name: nginx
-        state: started
-        enabled: yes
+    - name: Displaying course information
+      msg: thec course is {{COURSE}} and Trainse is {{TRAINER}} and Duration is {{DURATION}}
+    
     
